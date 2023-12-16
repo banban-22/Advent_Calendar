@@ -57,24 +57,26 @@ const Login = ({ user }) => {
             ))}
           </div>
         )}
-        <div className="flex gap-4 items-center justify-between">
+        <div className="flex flex-col gap-4 items-center justify-between">
           <h3 className="text-xl font-bold">Login</h3>
-          <label htmlFor="">Email:</label>
-          <input
-            type="email"
-            placeholder="xxx@xxx.com"
-            className="py-3 px-5 border-2 rounded-xl"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div className="flex gap-4 items-center">
-          <label htmlFor="">Password:</label>
-          <input
-            type="password"
-            placeholder="111111"
-            className="py-3 px-5 border-2 rounded-xl"
-            onChange={(e) => setPassword(e.target.value)}
-          />
+          <div className="flex gap-4 items-center">
+            <label htmlFor="">Email:</label>
+            <input
+              type="email"
+              placeholder="xxx@xxx.com"
+              className="py-3 px-5 border-2 rounded-xl"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="flex gap-4 items-center">
+            <label htmlFor="">Password:</label>
+            <input
+              type="password"
+              placeholder="111111"
+              className="py-3 px-5 border-2 rounded-xl"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
         </div>
         <button
           type="submit"
